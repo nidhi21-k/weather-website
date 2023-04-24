@@ -8,13 +8,13 @@ const geocode = require('./utils/geocode.js');
 const forecast = require('./utils/forecast.js');
 
 //Define paths for express config
-//-------------------------------------
+//------------------------------------
 const publicDirectoryPath = path.join(__dirname,'../public');
 const viewPath = path.join(__dirname,'../templates/views');
 const partialsPath = path.join(__dirname,'../templates/partials');
 
 // set handlebars engine and views engine
-//----------------------------------
+//-----------------------------------
 app.set('view engine','hbs');
 app.set('views',viewPath);
 hbs.registerPartials(partialsPath);
@@ -55,7 +55,7 @@ app.get('/weather',(req,res)=>{
             return res.send({
                 error: error
             });
-        }
+        };
         
         forecast(latitude,longitude,(error, forecastData)=>{
             if(error){
@@ -69,7 +69,7 @@ app.get('/weather',(req,res)=>{
                     location: location,
                     address:req.query.address
                 });
-            }
+            };
         });
     });
 });
