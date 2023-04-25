@@ -3,7 +3,7 @@ const path = require('path');
 const hbs = require('hbs'); //handlebars object
 
 const app = express();  // express object
-const port = proce.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const geocode = require('./utils/geocode.js');
 const forecast = require('./utils/forecast.js');
