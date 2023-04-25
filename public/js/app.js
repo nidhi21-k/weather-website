@@ -7,7 +7,6 @@ weatherForm.addEventListener('submit',(e)=>{
 
     e.preventDefault();
 
-
     message_1.textContent = 'Loading...';
     message_2.textContent = '';
     
