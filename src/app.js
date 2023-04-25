@@ -27,13 +27,13 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req,res)=>{
     res.render('index',{
         title: 'Weather forecast',
-        name: 'NIDHI'
+        name: 'Nidhi'
     });
 });
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title: 'About me',
+        title: 'About Website',
         name: 'Nidhi'
     });
 });
@@ -41,7 +41,7 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help',
-        name: 'nidhi'
+        name: 'Nidhi'
     });
 });
 
